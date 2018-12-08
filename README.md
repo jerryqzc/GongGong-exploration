@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ../../Desktop/git-img/owm.png
----
-
 # Gonggong-exploration
 
 Hello Gonggong
