@@ -31,3 +31,7 @@ error: open //bin/unhide.sh: No such file or directory
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/login.png)
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/logged.png)
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/task.png)
+运行了拱拱，这是一个单视图应用程序（Single View Application），另外还有主-从视图应用程序(Master-Detail Application)，Page Based 应用程序，Tabbed 应用程序等，这些都在Xcode中提供了模版。
+先从目录入手，有GongGong和Pods两个子类
+
+2018-12-08 23 59</br>
