@@ -35,4 +35,4 @@ error: open //bin/unhide.sh: No such file or directory
 
 2018-12-08 23 59</br>
 打开workspace，有GongGong和Pods两个子项目
-![Image text]（https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png）
+![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png)
