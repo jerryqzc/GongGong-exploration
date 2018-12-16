@@ -46,3 +46,20 @@ Gongong project 展开：
 </br>
 Pods project 展开：
 ![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listP.png)
+这里的Pods看起来好熟悉，先前也在翻代码的过程中看到了Cocoa Touch框架，我也找了一下CocoaPods的简介，//它是专门为iOS project提供第三方依赖库的管理工具，通过CocoaPods，可以更方便地管理每个第三方库的版本，而且不需要做太多的配置，就可以直观、集中和自动化地管理我们项目的第三方库。
+CocoaPods将所有依赖的库都放在一个名为Pods的项目下，然后让主项目依赖Pods项目。然后，我们编码工作都从主项目转移到Pods项目。Pods项目最终会编译为一个libPod-项目名.a静态库，主项目依赖于这个静态库。
+//对于资源文件，CocoaPods 提供了一个名为 Pods-resources.sh 的 bash 脚本，该脚本在每次项目编译的时候都会执行，将第三方库的各种资源文件复制到目标目录中。
+CocoaPods 通过一个名为 Pods.xcconfig 的文件来在编译时设置所有的依赖和参数。
+CocoaPods是用 Ruby 写的，并由若干个 Ruby 包 (gems) 构成的。在解析整合过程中，最重要的几个 gems 分别是： CocoaPods/CocoaPods, CocoaPods/Core, 和 CocoaPods/Xcodeproj。
+CocoaPod的核心组件
+
+CocoaPods/CocoaPod
+这是是一个面向用户的组件，每当执行一个 pod 命令时，这个组件都将被激活。该组件包括了所有使用 CocoaPods 涉及到的功能，并且还能通过调用所有其它的 gems 来执行任务。
+CocoaPods/Core
+Core 组件提供支持与 CocoaPods 相关文件的处理，文件主要是 Podfile 和 podspecs。
+Podfile
+Podfile 是一个文件，用于定义项目所需要使用的第三方库。该文件支持高度定制，你可以根据个人喜好对其做出定制。更多相关信息，请查阅 Podfile 指南。
+Podspec
+.podspec 也是一个文件，该文件描述了一个库是怎样被添加到工程中的。它支持的功能有：列出源文件、framework、编译选项和某个库所需要的依赖等。
+CocoaPods/Xcodeproj
+这个 gem 组件负责所有工程文件的整合。它能够对创建并修改 .xcodeproj 和 .xcworkspace 文件。它也可以作为单独的一个 gem 包使用。如果你想要写一个脚本来方便的修改工程文件，那么可以使用这个 gem。//
