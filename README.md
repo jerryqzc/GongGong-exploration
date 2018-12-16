@@ -36,16 +36,16 @@ Note：经过几天带一晚我和君gg的瞎折腾，请允许我高兴一下�
 2018-12-08 23 59</br>
 Note：了解结构
 打开workspace，有GongGong和Pods两个子项目
-![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png)
+![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png)</br>
 </br>
 将两个子项目展开：
-![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/2list.png)
+![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/2list.png)</br>
 </br>
 Gongong project 展开：
-![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listG.png)
+![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listG.png)</br>
 </br>
 Pods project 展开：
-![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listP.png)
+![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listP.png)</br>
 这里的Pods看起来好熟悉，先前也在翻代码的过程中看到了Cocoa Touch框架，我也找了一下CocoaPods的简介：CocoaPods是专门为iOS project提供第三方依赖库的管理工具，通过CocoaPods，可以更方便地管理每个第三方库的版本，而且不需要做太多的配置，就可以直观、集中和自动化地管理我们项目的第三方库。</br>
 CocoaPods将所有依赖的库都放在一个名为Pods的项目下，然后让主项目依赖Pods项目。然后，我们编码工作都从主项目转移到Pods项目。Pods项目最终会编译为一个libPod-项目名.a静态库，主项目依赖于这个静态库。</br>
 对于资源文件，CocoaPods 提供了一个名为 Pods-resources.sh 的 bash 脚本，该脚本在每次项目编译的时候都会执行，将第三方库的各种资源文件复制到目标目录中。
