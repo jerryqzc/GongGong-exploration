@@ -21,10 +21,10 @@ error: open //bin/unhide.sh: No such file or directory
 
 2018-12-08 23 59</br>
 Note：经过几天带一晚我和君gg的瞎折腾，请允许我高兴一下下，所有红色的❕issues都没了！终于可以看到那只粉居居在iOS模拟器里流畅运行啦！或许在dalao们看来这并不算什么，可能看到自己添了一点东西在里面，issues就消失了，出现Build Succeeded的时候是多么让人兴奋。</br>
-先说一下我们改的过程吧，两个issues我和jgg各自解决了一个，上周还在纠结环境，语言，版本的问题，这周有了Mac mini的帮助，环境立刻好了，我的电脑也认识粉居居了。ps：虽然你们说Mac mini好慢，可我在实际操作的时候发现体验并不差，除了开机速度有点揪心，其他渲染什么的感觉差距不太大，接在同学那个超大的显示器上也是超级舒服的。
-一个issue就是Swift Compiler Error Expected identifier in function declaration也就是编译器错误，函数声明中的预期标识符,我在函数声明那里加了个名称，完美，解决了一个issue
+先说一下我们改的过程吧，两个issues我和jgg各自解决了一个，上周还在纠结环境，语言，版本的问题，这周有了Mac mini的帮助，环境立刻好了，我的电脑也认识粉居居了。ps：虽然你们说Mac mini好慢，可我在实际操作的时候发现体验并不差，除了开机速度有点揪心，其他渲染什么的感觉差距不太大，接在同学的超大的显示器上也是超级舒服的。
+一个issue就是Swift Compiler Error Expected identifier in function declaration，也就是编译器错误，函数声明中的预期标识符,我在函数声明那里加了个名称，完美，解决了一个issue
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/is1.png)
-另一个就是在Localizable.strings中莫名多了一个符号，我是真的没发现，也不敢乱动，结果jgg说要不删了那个试试，然后就Build Succeeded！！！多么激动！</br>
+另一个就是在Localizable.strings中莫名多了一个点，我是真的没发现，也不敢乱动，结果唐贤君说试试删了那个句号，然后就Build Succeeded！！！多么激动！</br>
 展示一下磨人的小妖精
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-08%20%E4%B8%8B%E5%8D%8811.17.58.png)
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/prv.png)
@@ -51,7 +51,7 @@ CocoaPods将所有依赖的库都放在一个名为Pods的项目下，然后让�
 对于资源文件，CocoaPods 提供了一个名为 Pods-resources.sh 的 bash 脚本，该脚本在每次项目编译的时候都会执行，将第三方库的各种资源文件复制到目标目录中。
 CocoaPods 通过一个名为 Pods.xcconfig 的文件来在编译时设置所有的依赖和参数。</br>
 CocoaPods是用 Ruby 写的，并由若干个 Ruby 包 (gems) 构成的。在解析整合过程中，最重要的几个 gems 分别是： CocoaPods/CocoaPods, CocoaPods/Core, 和 CocoaPods/Xcodeproj。</br>
-
+</br>
 CocoaPod的核心组件</br>
 CocoaPods/CocoaPod</br>
 这是是一个面向用户的组件，每当执行一个 pod 命令时，这个组件都将被激活。该组件包括了所有使用 CocoaPods 涉及到的功能，并且还能通过调用所有其它的 gems 来执行任务。</br>
@@ -62,5 +62,5 @@ Podfile 是一个文件，用于定义项目所需要使用的第三方库。该
 Podspec</br>
 .podspec 也是一个文件，该文件描述了一个库是怎样被添加到工程中的。它支持的功能有：列出源文件、framework、编译选项和某个库所需要的依赖等。</br>
 CocoaPods/Xcodeproj</br>
-这个 gem 组件负责所有工程文件的整合。它能够对创建并修改 .xcodeproj 和 .xcworkspace 文件。它也可以作为单独的一个 gem 包使用。如果你想要写一个脚本来方便的修改工程文件，那么可以使用这个 gem。</br>
+这个 gem 组件负责所有工程文件的整合。它能够对创建并修改 .xcodeproj 和 .xcworkspace 文件。它也可以作为单独的一个 gem 包使用。如果还想要写一个脚本来方便的修改工程文件，那么可以使用这个 gem。</br>
 2018-12-13 18 20
