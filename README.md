@@ -37,9 +37,12 @@ Note：经过几天带一晚我和君gg的瞎折腾，请允许我高兴一下�
 Note：了解结构
 打开workspace，有GongGong和Pods两个子项目
 ![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png)
+</br>
 将两个子项目展开：
 ![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/2list.png)
+</br>
 Gongong project 展开：
 ![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listG.png)
+</br>
 Pods project 展开：
 ![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listP.png)
