@@ -1,5 +1,5 @@
 # Gonggong-exploration
-/*Hello Gonggong</br>
+Hello Gonggong</br>
 2018-12-02 13 52 </br>
 引入:上周末拿到了拱拱iOS端的源码，想想还有点小激动，伴随而来的还有些许担忧，希望之后能有更多的小伙伴陪我一起走下去吧，不过如果真的就是我一个人的话，那我也愿意的。今天早上起床，看班群里我们班上的同学在问课表，突然一个人说“去拱拱上看呀”，接着他又说“哦，忘了拱拱没有iOS版的，下个超级课程表吧，或者到微信小程序里看看。”感到有点尴尬，但这又激励我继续前进，了解小居居是如何吃苹果的。
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/awk.png)</br>
@@ -63,4 +63,7 @@ Podspec</br>
 .podspec 也是一个文件，该文件描述了一个库是怎样被添加到工程中的。它支持的功能有：列出源文件、framework、编译选项和某个库所需要的依赖等。</br>
 CocoaPods/Xcodeproj</br>
 这个 gem 组件负责所有工程文件的整合。它能够对创建并修改 .xcodeproj 和 .xcworkspace 文件。它也可以作为单独的一个 gem 包使用。如果还想要写一个脚本来方便的修改工程文件，那么可以使用这个 gem。</br>
-2018-12-13 18 20*/
+2018-12-13 18 20 </br>
+2019-1-12  23 39 </br>
+9号考完试，10号去长沙玩了一天，11号下午回来，马不停蹄的开始了因考试而搁置的iOS Development，我也有了正儿八经的教师来教我如何耍Xcode了，不过学习之前我还是再了解一下iOS architecture，发现它的底层是Unix。
+今天冬令营也开始了，在明天到来之前我给自己做了一个学习+工作的规划
