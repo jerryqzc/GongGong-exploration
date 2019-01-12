@@ -64,4 +64,3 @@ Podspec</br>
 CocoaPods/Xcodeproj</br>
 这个 gem 组件负责所有工程文件的整合。它能够对创建并修改 .xcodeproj 和 .xcworkspace 文件。它也可以作为单独的一个 gem 包使用。如果还想要写一个脚本来方便的修改工程文件，那么可以使用这个 gem。</br>
 2018-12-13 18 20
-2019-1-12  23 39
