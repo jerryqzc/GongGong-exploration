@@ -69,5 +69,23 @@ CocoaPods/Xcodeproj</br>
 今天冬令营也开始了，在明天到来之前我给自己做了一个学习+工作的规划
 2019-1-23  21 15 </br>
 冬令营终于结束了，我也在22号平安抵达了禄口机场，整顿了一天之后，今天也开始了正式（假的）寒假生活，虽然一直到26号期间都有很多事要办，还有本人的20大寿，但学习还是要学习的，笔记还是要做的，要不光年哥是不会放过我的，我自己也会不好意思的。
-近期我在YouTube上看斯坦福大学某教授的公开课，一共四节，计划月底看完，已经快要结束一节。通过公开课的学习，我将了解更多有关高版本Xcode的使用方法以及它与老版本Xcode存在的语言方面的差异。
-还有，以后我会每天做笔记的，光年哥可不要偷懒忘了看哦。
+近期我在YouTube上看斯坦福大学某教授的公开课。通过公开课的学习，我将了解更多有关高版本Xcode的使用方法以及它与老版本Xcode存在的语言方面的差异。
+2019-1-29  13:54 </br>
+System Learning </br>
+面向对象编程 Object-Oriented Programming iOS app 适用语言 Oobjective-C 和 Swift（现已更新到5.0）</br>
+iOS 结构：|cocoa touch  </br>|media  </br>|core service  </br>|core os</br>
+基于BSD版本的Unix 底层大部分是用c语言构建的</br>
+</br>
+Xcode </br>
+Single view app单视图程序</br>
+左侧 navigator导航栏</br>
+右侧 utilities pane工具栏</br>
+下方 debugger 和 console 控制台</br>
+assets 包括应用图标等图片</br>
+main storyboard</br>
+在view controller中编辑UI</br>
+借助interface builder 旁边还有 document outline 就是interface builder的文本大纲形式</br>
+下方有设备选择器</br>
+后期还要制作可以自适应的app，以适应在不同型号设备上的显示</br>
+像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）</br>
+只需要drag and drop就可以很简单的添加控件</br>
