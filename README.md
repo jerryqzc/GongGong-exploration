@@ -73,24 +73,28 @@ CocoaPods/Xcodeproj</br>
 2019-1-29  13:54 </br>
 System Learning </br>
 面向对象编程 Object-Oriented Programming iOS app 适用语言 Oobjective-C 和 Swift（现已更新到5.0）</br>
-MVC Model-View-Controller  https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
-iOS 结构：</br>|cocoa touch  </br>|media  </br>|core service  </br>|core os</br>
-基于BSD版本的Unix 底层大部分是用c语言构建的</br>
-</br>
-Xcode </br>
-Single view app单视图程序</br>
-左侧 navigator导航栏</br>
-右侧 utilities pane工具栏</br>
-下方 debugger 和 console 控制台</br>
-assets 包括应用图标等图片</br>
-main storyboard即构建UI之处   </br>
-在view controller中编辑UI</br>
-借助interface builder 旁边还有 document outline 就是interface builder的文本大纲形式</br>
-下方有设备选择器</br>
+MVC Model-View-Controller  https://www.tutorialspoint.com/mvc_framework/        mvc_framework_introduction.htm                    
+iOS 结构：          
+cocoa touch        
+media             
+core service           
+core os               
+基于BSD版本的Unix 底层大部分是用c语言构建的              
+        
+Xcode         
+Single view app单视图程序            
+左侧 navigator导航栏             
+右侧 utilities pane工具栏            
+下方 debugger 和 console 控制台            
+assets 包括应用图标等图片            
+main storyboard即构建UI之处                   
+在view controller中编辑UI             
+借助interface builder 旁边还有 document outline 就是interface builder的文本大纲形式             
+下方有设备选择器                    
 后期还要制作自适应app，以适应在不同型号设备上的显示           
 像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）          
 只需要drag and drop就可以很简单的添加控件        
-2019-1-30  17:21      
+##2019-1-30  17:21      
 Assistant editor 让代码和UI同时出现在屏幕上，便于编辑         
 
 将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系          
