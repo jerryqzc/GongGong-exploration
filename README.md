@@ -87,17 +87,17 @@ main storyboard即构建UI之处   </br>
 在view controller中编辑UI</br>
 借助interface builder 旁边还有 document outline 就是interface builder的文本大纲形式</br>
 下方有设备选择器</br>
-后期还要制作自适应app，以适应在不同型号设备上的显示</br>
-像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）</br>
-只需要drag and drop就可以很简单的添加控件</br>
-2019-1-30  17:21 </br>
-Assistant editor 让代码和UI同时出现在屏幕上，便于编辑</br>
+后期还要制作自适应app，以适应在不同型号设备上的显示           
+像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）          
+只需要drag and drop就可以很简单的添加控件        
+2019-1-30  17:21      
+Assistant editor 让代码和UI同时出现在屏幕上，便于编辑         
 
-将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系</br>
-button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应
-
-main.storyboard构成
-
+将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系          
+button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应         
+       
+main.storyboard构成      
+    
 import UIKit
 
 class ViewController: UIViewController {
