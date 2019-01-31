@@ -92,7 +92,7 @@ main storyboard即构建UI之处   </br>
 只需要drag and drop就可以很简单的添加控件</br>
 2019-1-30  17:21 </br>
 Assistant editor 让代码和UI同时出现在屏幕上，便于编辑</br>
-![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/assistant editor.png)</br>
+
 将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系</br>
 button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应
 
