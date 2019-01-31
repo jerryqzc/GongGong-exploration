@@ -1,5 +1,6 @@
 # Gonggong-exploration
-## Hello Gonggong                            
+## Hello Gonggong！🌚🌚🌚     
+                            
 ## 2018-12-02 13:52                                
 ### Introduction:上周末拿到了拱拱iOS端的源码，想想还有点小激动，伴随而来的还有些许担忧，希望之后能有更多的小伙伴陪我一起走下去吧，不过如果真的就是我一个人的话，那我也没有怨言。今天早上起床，看班群里我们班上的同学在问课表，突然一个人说“去拱拱上看呀”，接着他又说“哦，忘了拱拱没有iOS版的，下个超级课程表吧，或者到微信小程序里看看。”感到有点尴尬，但这又激励我继续前进，去了解小居居是如何吃苹果的。                
 *![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/awk.png)                
@@ -38,13 +39,13 @@ http://www.hangge.com/blog/cache/detail_1097.html
 ### Note：初探结构                
 打开workspace，有GongGong和Pods两个子项目                
 *![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/1list.png)                
-                
+                        
 将两个子项目展开：
 *![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/2list.png)                
-                
+                        
 Gongong project 展开：
 *![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listG.png)                
-                
+                            
 Pods project 展开：
 *![Image text](https://github.com/jerryqzc/GongGong-exploration/blob/master/git-img/3listP.png)                
 这里的Pods看起来好熟悉，先前也在翻代码的过程中看到了Cocoa Touch框架，而Cocoa Touch框架也在学长给我的开发指南中有介绍，我也找了一下CocoaPods的简介：CocoaPods是专门为iOS project提供第三方依赖库的管理工具，通过CocoaPods，可以更方便地管理每个第三方库的版本，而且不需要做太多的配置，就可以直观、集中和自动化地管理我们项目的第三方库。                
@@ -72,25 +73,22 @@ Podfile 是一个文件，用于定义项目所需要使用的第三方库。该
                
 ## 2019-1-23  21:15                 
 冬令营终于结束了，我也在22号平安抵达了禄口机场，整顿了一天之后，今天也开始了正式（假的）寒假生活，虽然一直到26号期间都有很多事要办，还有本人的20大寿，但学习还是要学习的，笔记还是要做的，要不光年哥是不会放过我的，我自己也会不好意思的。                
-近期我在YouTube上看Stanford某教授的公开课。通过公开课的学习，我将了解更多有关高版本Xcode的使用方法以及它与老版本Xcode存在的语言方面的差异。                
+近期我在YouTube上看Stanford某教授的公开课。通过公开课的学习，我将了解更多有关高版本Xcode的使用方法以及它与老版本Xcode存在的语言方面的差异。      
+                     
 ## 2019-1-29  13:54                 
 ### Note：System Learning                
 ### 面向对象编程 Object-Oriented Programming           
-             
-### iOS app 适用语言 Oobjective-C 和 Swift（现已更新到5.0）                
-                
+### iOS app 适用语言 Oobjective-C 和 Swift（现已更新到5.0）                   
 ### 编程思想MVC Model-View-Controller  
 可在https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm        
 查看简介
-
 ### iOS 结构：          
-cocoa touch        
-media             
-core service           
-core os                   
+#### Cocoa Touch        
+#### Media             
+#### Core Service           
+#### Core OS                   
 不太明确分的四层结构          
-顺便提一句，基于BSD版本的Unix 底层大部分是用C语言构建的，又到了令我恐惧的C语言              
-        
+顺便提一句，基于BSD版本的Unix 底层大部分是用C语言构建的（又到了令我恐惧的C语言）              
 ### Xcode         
 Single view app单视图程序            
 左侧 navigator导航栏             
@@ -107,26 +105,28 @@ main storyboard即构建UI之处
 只需要drag and drop就可以很简单的添加控件        
 
 ## 2019-1-30  17:21                      
-### Assistant editor 让代码和UI同时出现在屏幕上，便于编辑         
-
-将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系          
-button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应         
+### Assistant editor             
+让代码和UI同时出现在屏幕上，便于编辑          
+          
+### 将UI和代码建立关联             
+按住control从视图里拖到代码区域，就与方法建立了联系          
+button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应             
        
 ### main.storyboard构成      
-    
-import UIKit
-
+      
+import UIKit       
+       
 class ViewController: UIViewController {
-所有的方法和实例变量全都放在括号里，这就是声明类的方法，为了点击button时有所反应，所以我们要在这里创建一个方法
+所有的方法和实例变量全都放在括号里，这就是声明类的方法，为了点击button时有所反应，所以我们要在这里创建一个方法       
 
-@IBAction func touchCard(_ sender: UIButton) {
-
-}
-@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应
-}
-这里定义了一个类，用关键字class  
-viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述   
-后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义
+@IBAction func touchCard(_ sender: UIButton) {        
+   
+}    
+@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应       
+}      
+这里定义了一个类，用关键字class      
+viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述      
+后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义      
                
-## 2019-1-31  11:42
+## 2019-1-31  11:42     
 
