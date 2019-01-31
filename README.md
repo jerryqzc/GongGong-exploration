@@ -94,7 +94,9 @@ main storyboard即构建UI之处   </br>
 Assistant editor 让代码和UI同时出现在屏幕上，便于编辑</br>
 ![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/assistant editor.png)</br>
 将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系</br>
-button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应</br>
+button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应
+
+main.storyboard构成
 
 import UIKit
 
@@ -103,5 +105,4 @@ class ViewController: UIViewController {
 </br>
 @IBAction func touchCard(_ sender: UIButton) {
 }//@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应
-
 }//这里定义了一个类，用关键字class||viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述||后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义</br>
