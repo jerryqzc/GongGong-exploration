@@ -129,4 +129,32 @@ viewController是类的名字，虽然它在这里指代范围很广泛，但若
 后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义      
                
 ## 2019-1-31  11:42     
-
+### 先说点不正经的，今天学了点Markdown的基本语法，又改进了一下自己的笔记的格式，看看是不是清爽了很多？嘻嘻，也让我自己坚定了要学下去的信心。     
+不恰当的说，方法equals to定义在类里的函数（也就是对不对象的区别，特别是在Objective-C里，就不细说了），我们也可以在基本的swift语法中看出来。       
+#### @IBAction func touchCard(_ sender: UIButton) {     
+#### }     
+举个简单的例子，这里的func，众所周知，即是一个函数，那它后面的touchCard就是一个方法了。这个方法就是对用户给出的点击的action给出相应的响应。     
+#### (_ sender: UIButton)    
+就是一个参数(argument)列表。这个方法有一个参数，参数类型在最后面，用英文':'隔开，这里的类型就是UIButton        
+_ sender是参数parameter的名称        
+这里插播一个point，swift语言有两个和其他语言不通的地方：          
+其一：每个参数有一个实参标签在前面，在实际调用方法的时候就用这个标签        
+其二：每个参数有两个名字，其中一个就是之前提到的实参标签（external name），这是给调用方法的人（程序员）用的；另一个就是行参名称（internal name），即在实现方法的时候使用的形式参数的名称          
+如果有返回值，就加上-> Int 
+### Example:           
+#### @IBAction func touchCard(_ sender: UIButton)  -> Int  {          
+#### }         
+这样就会返回指定类型的数，例如这里就会返回一个Int类型的整数            
+这里我们可以添加print（）这个全局函数，在控制台里测试这个方法是否可用（这也是debug的一种方法）        
+#### 如何写一个swift函数？
+It's  a piece of cake !
+func开头（方法也是函数的一种嘻嘻嘻，这也是为什么我之前作出“不恰当的”equal）         
+之后就是函数的名称，就叫flipCard吧，毕竟它是个翻牌程序呀        
+如之前所言，接下来就到了参数arguments了，这里的函数有两个参数，一个是我们在牌上添加的内容，就是那个emoji(给它命名为withEmoji，类型为String)，另一个，显而易见就是button(命名为on button，具体命名规则参照swift.org,API设计准则)按钮了，另外我也发现这里正是swift特性表现出来的一个好例子，实参标签和行参名称同时出现           
+也是考虑到不让程序员太过痛苦，所以有一条就是"read like English"不得不说应该点个赞        
+接下来就是华丽丽的调用函数了，在touchCard里调用         
+@IBAction func touchCard(_ sender: UIButton) {        
+flipCard(withEmoji: "👻", on: sender)         
+}            
+这样调用的时候，读起来就像真正的英语一样吧          
+再接着之前(142行)所说的，其实也不必有两个名字，但只有极少数情况下我们才会使用一个名字，当我们只使用一个名字时，缺省的参数用'_'表示      
