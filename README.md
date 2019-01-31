@@ -91,5 +91,17 @@ main storyboard即构建UI之处   </br>
 像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）</br>
 只需要drag and drop就可以很简单的添加控件</br>
 2019-1-30  17:21 </br>
-Assistant editor</br>
-将UI和代码建立关联 按住control从视图里拖到代码区域 就有了方法</br>
+Assistant editor 让代码和UI同时出现在屏幕上，便于编辑</br>
+![Image text](https://github.com/jerryqzc/Gonggong-exploration/blob/master/git-img/assistant editor.png)</br>
+将UI和代码建立关联：按住control从视图里拖到代码区域，就与方法建立了联系</br>
+button关联有action和outlet两种类型，这里我们选择action。因为需要的是用户给出click的操作，然后button给出相应的响应</br>
+
+import UIKit</br>
+
+class ViewController: UIViewController {</br>
+/*所有的方法和实例变量全都放在括号里，这就是声明类的方法，为了点击button时有所反应，所以我们要在这里创建一个方法*/</br>
+</br>
+@IBAction func touchCard(_ sender: UIButton) {</br>
+}//@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应</br>
+</br>
+}//这里定义了一个类，用关键字class||viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述||后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义</br>
