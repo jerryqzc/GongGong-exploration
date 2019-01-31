@@ -101,8 +101,13 @@ main.storyboard构成
 import UIKit
 
 class ViewController: UIViewController {
-/*所有的方法和实例变量全都放在括号里，这就是声明类的方法，为了点击button时有所反应，所以我们要在这里创建一个方法*/
-</br>
+所有的方法和实例变量全都放在括号里，这就是声明类的方法，为了点击button时有所反应，所以我们要在这里创建一个方法
+
 @IBAction func touchCard(_ sender: UIButton) {
-}//@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应
-}//这里定义了一个类，用关键字class||viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述||后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义</br>
+
+}
+@IBAction是Xcode里修饰方法的特殊指令，因此左边显示了一个小圆圈，当鼠标悬浮在其上时，会有响应
+}
+这里定义了一个类，用关键字class
+viewController是类的名字，虽然它在这里指代范围很广泛，但若想要改变它的名字，不宜在这里单独改变，还要注意在用户界面也要改，这里不做赘述
+后面的UIViewController是它的父类（super class），继承自UIKit，因为UIViewController在UIKit中定义
