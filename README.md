@@ -73,7 +73,7 @@ CocoaPods/Xcodeproj</br>
 2019-1-29  13:54 </br>
 System Learning </br>
 面向对象编程 Object-Oriented Programming iOS app 适用语言 Oobjective-C 和 Swift（现已更新到5.0）</br>
-MVC Model-View-Controller 
+MVC Model-View-Controller  https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
 iOS 结构：</br>|cocoa touch  </br>|media  </br>|core service  </br>|core os</br>
 基于BSD版本的Unix 底层大部分是用c语言构建的</br>
 </br>
@@ -91,3 +91,5 @@ main storyboard即构建UI之处   </br>
 像个home键一样的图标 那是object library对象库 可以添加诸如buttons、sliders、labels、switches、web views、table views、text views、ARKit等控件（对象）</br>
 只需要drag and drop就可以很简单的添加控件</br>
 2019-1-30  17:21 </br>
+Assistant editor</br>
+将UI和代码建立关联 按住control从视图里拖到代码区域 就有了方法</br>
